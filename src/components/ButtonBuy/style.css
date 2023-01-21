@@ -1,0 +1,24 @@
+.btn-container {
+  display: flex;
+  padding: 28px 0px 9px 0px;
+  justify-content: center;
+}
+
+.btn-container button {
+  background-color: #00285F;
+}
+
+.btn h6 {
+  color: #fff;
+  text-transform: uppercase;
+  width: 25vh;  
+}
+
+
+/* MEDIA */
+@media (min-width: 576px) {
+  
+.btn-container button h6 {
+    font-size: 14px;
+  }
+}
