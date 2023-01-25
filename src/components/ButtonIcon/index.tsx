@@ -4,13 +4,14 @@ const ButtonIcon = () => {
   return (
     <div className="btn-container">
       <button className="btn btn-primary">
-        <h6>VER CATÁLOGO</h6>
+        <h6>NOVO</h6>
       </button>
-      
+
+      <div className="btn-icon-container">
+        <Seta />
+      </div>
     </div>
   );
 };
-
-
 
 export default ButtonIcon;

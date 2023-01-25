@@ -1,14 +1,14 @@
 import NavBar from 'components/Navbar';
 import './style.css';
-const ProductPrice = () => {
+const PlayerCredit = () => {
   return (
     <>
       <div className="product-price-container">
-        <span>R$</span>
+        <span>SALDO R$</span>
         <h3 >2.350,25</h3>
       </div>
     </>
   );
 };
 
-export default ProductPrice;
+export default PlayerCredit;

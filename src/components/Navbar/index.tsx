@@ -7,7 +7,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-md main-nav navbar-light">
       <div className="container-fluid">
         <Link to="/" className="nav-logo-text ">
-          <h4>Carros Top</h4>
+          <h4>Sportifs</h4>
         </Link>
         <button
           className="navbar-toggler"
@@ -25,12 +25,18 @@ const NavBar = () => {
           <ul className="navbar-nav offset-md-2 main-menu">
             <li>
               <NavLink to="/" activeClassName="active">
-                Home
+                MEU JOGOS
               </NavLink>
             </li>
             <li>
-              <NavLink to="/products">Catálogo</NavLink>
+              <NavLink to="/rodadas">RODADAS</NavLink>
             </li>            
+            <li>
+              <NavLink to="/premiacoes">RANKING</NavLink>
+            </li>            
+            <li>
+              <NavLink to="/acesso">ACESSO</NavLink>
+            </li>    
           </ul>
         </div>
       </div>

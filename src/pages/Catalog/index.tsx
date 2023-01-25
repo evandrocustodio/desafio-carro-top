@@ -1,10 +1,10 @@
-import ProductCard from 'components/ProductCard';
+import ProductCard from 'components/RankingItem';
 import './style.css';
 
 const Catalog = () => {
   return (
     <>
-      <div className="my-4 container">
+      <div className="my-3 container">
         <div className="row ">
           <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
             <ProductCard />

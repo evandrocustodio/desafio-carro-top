@@ -1,0 +1,41 @@
+.ranking-container {
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: #40b9ff59;
+  /*background-color: rgba(241, 21, 21, 0.155);*/
+  display: flex;
+  border: 1px black dotted;
+  border-radius: 0 15px 15px 0;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  min-width: 200px;
+}
+
+.ranking-position {
+  width: 70px;
+  font-weight: bold;
+}
+
+
+.ranking-ident {  
+  display: flex;
+  width:  100%;
+  font-weight: bold;
+  font-size: 14px;
+  flex-direction: column;
+  align-items: flex-start;  
+  border-left: 2px dotted black;
+  padding-left: 10px;  
+}
+
+.ranking-ident p {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.ranking-img {
+  width: 40px;
+  height: 40px;
+  padding-right:5px ;
+}

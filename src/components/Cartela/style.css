@@ -1,0 +1,130 @@
+.itens {
+  display: flex;
+  font-size: 14px;
+  margin: 5px;
+  height: 70px;
+  width: 900px;
+  border-radius: 10px;
+  border: 2px dotted lightslategray;
+  padding: 2px;
+  background-color: #fff;
+}
+.sinalizador {
+  width: 7px;
+  height: 7px;
+  background-color: rgb(9, 161, 9);  
+  border-radius: 50%;
+  position: absolute;  
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.sinalizador-red {
+  width: 7px;
+  height: 7px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+
+.sinalizador-gray {
+  width: 7px;
+  height: 7px;
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.itens-left {
+  display: flex;
+  flex-direction: column;
+  align-items:center;  
+  padding: 4px 10px 0px 5px;
+  background-color: rgb(255, 210, 210);
+  border-radius: 10px  0px 0px 10px;;
+}
+
+.itens-id {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.itens-date {
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.itens-right {
+  font-weight: normal;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  border-left: 2px dotted black;
+}
+
+.itens-right-total {
+  font-weight: normal;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  height: 50px;
+}
+
+.jogo {
+  border: 1px springgreen solid;
+}
+
+.itens-jogos {
+  display: flex;
+}
+
+.itens-jogos-i {
+  padding: 5px;
+  font-size: 8px;
+  font-weight: bold;
+  width: 59px;
+}
+
+.itens-jogos-logo {
+  padding: 5px;
+  font-size: 8px;
+  font-weight: bold;
+  width: 59px;
+  height: 45px;
+}
+
+.itens-jogos-logo img {
+  width: 33px;
+}
+
+.itens-jogos-logo p {
+  margin-top: -8px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 50px;
+}
+
+.itens-right-pontos {
+  display: flex;
+
+}
+
+.itens-right-total-titulo {
+ font-size: 12px;
+ font-weight: bold;
+}
+
+.itens-right-total-pontos {
+  font-size: 25px;
+  font-weight: bold;
+ 
+}

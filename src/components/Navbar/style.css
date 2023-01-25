@@ -1,33 +1,37 @@
 .main-nav {
-    background-color: #F78B00;    
+  background-color: #40baff;
 }
 
-.nav-logo-text, .nav-logo-text:hover {
-    color: #00285F;   
+.nav-logo-text,
+.nav-logo-text:hover {
+  color: #ffff;
+}
+
+.nav-logo-text h4 {
+    font-size: 36px;
 }
 
 .main-menu {
-   display: flex;   
-   font-size: 18px;
-   width: 400px;
-   justify-content: space-between;   
-   
+  display: flex;
+  font-size: 18px;
+  width: 450px;
+  justify-content: space-between;
 }
 
 .main-menu a {
-    color: #00285F;
+  color: #fff;
 }
 
 .main-menu a:hover {
-    color:  #00285F;
+  color: #fff;
 }
 
 .main-menu a.active {
-    color:  #00285F;
-    font-weight: bold;
+  color: #fff;
+  font-weight: bold;
 }
 
 .main-nav {
-    min-height: 70px;
-    padding-left: 40px;
+  min-height: 70px;
+  padding-left: 40px;
 }
