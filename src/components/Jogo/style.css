@@ -1,5 +1,40 @@
 .jogo-container {
   display: flex;
   flex-direction: column;
-  width: 50px;
+  height: 70px;
+  font-size: 8px;
+  font-weight: bold;
+  width: 59px;
+
+}
+
+
+.jogo-container img {
+  width: 30px;
+}
+.sinalizador {
+  width: 7px;
+  height: 7px;
+  background-color: rgb(9, 161, 9);
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 45px;
+  margin-top: 15px;  
+}
+
+.sinalizador-red {
+  width: 7px;
+  height: 7px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 45px;
+  margin-top: 15px;  
+
+}
+
+.empate {
+  font-size: 32px;
+  margin-top: -5px;
+  color: gray;
 }

@@ -9,36 +9,6 @@
   padding: 2px;
   background-color: #fff;
 }
-.sinalizador {
-  width: 7px;
-  height: 7px;
-  background-color: rgb(9, 161, 9);  
-  border-radius: 50%;
-  position: absolute;  
-  margin-top: 10px;
-  margin-left: 40px;
-}
-
-.sinalizador-red {
-  width: 7px;
-  height: 7px;
-  background-color: rgb(255, 0, 0);
-  border-radius: 50%;
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 40px;
-}
-
-
-.sinalizador-gray {
-  width: 7px;
-  height: 7px;
-  background-color: gray;
-  border-radius: 50%;
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 40px;
-}
 
 .itens-left {
   display: flex;
@@ -63,7 +33,7 @@
   font-weight: normal;
   display: flex;
   background-color: #fff;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   padding: 5px;
   border-left: 2px dotted black;
@@ -94,6 +64,7 @@
   width: 59px;
 }
 
+
 .itens-jogos-logo {
   padding: 5px;
   font-size: 8px;
@@ -102,9 +73,6 @@
   height: 45px;
 }
 
-.itens-jogos-logo img {
-  width: 33px;
-}
 
 .itens-jogos-logo p {
   margin-top: -8px;

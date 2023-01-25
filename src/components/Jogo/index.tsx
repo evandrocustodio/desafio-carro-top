@@ -1,22 +1,24 @@
 import NavBar from 'components/Navbar';
+import JogoDTO from 'Objects/JogoDTO';
 import './style.css';
-type Prop = {
-  casa: string;
-  fora: string;
-};
-const Jogo = ({ casa, fora }: Prop) => {
+
+const Jogo = (jogo: JogoDTO) => {
   return (
     <div className="jogo-container">
       <div className="jogo-container-header">
-        {casa} x {fora}
+        {jogo.casa.equipe} x {jogo.fora.equipe}
       </div>
-      <div className="itens-jogos-logo">
-        <div className="sinalizador-red" />
-        <img
-          src="https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg"
-          width="25px"
-        />
-      </div>
+      <div
+        className={jogo.palpite== jogo.resultado ? 'sinalizador' : 'sinalizador-red'}
+      />
+      {jogo.palpite != 0 && (
+        <div className="itens-jogos-logo">
+          <img src={jogo.palpite==1?jogo.casa.logo:jogo.fora.logo} />
+        </div>
+      )} 
+      {jogo.palpite == 0 && <div className='empate'>
+        X
+      </div>}
     </div>
   );
 };
