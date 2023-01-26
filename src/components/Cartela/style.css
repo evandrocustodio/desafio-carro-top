@@ -89,10 +89,27 @@
 .itens-right-total-titulo {
  font-size: 12px;
  font-weight: bold;
+ margin-top: 30px;
 }
 
 .itens-right-total-pontos {
   font-size: 25px;
   font-weight: bold;
+  
  
+}
+
+.icon-delete {
+  position: relative;
+  top: -30px; 
+  font-size: 16px;
+  left: 55px;
+  color: red;
+}
+.icon-edit {
+  position: relative;
+  font-size: 16px;
+  top: -50px;
+  left: 55px; 
+  color: darkblue;
 }

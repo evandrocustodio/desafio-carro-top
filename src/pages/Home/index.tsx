@@ -106,7 +106,7 @@ const Home = () => {
                     <div>
                       {apostas &&
                         apostas.map((j) => (
-                          <Cartela key={j.id} aposta={j} jogos={jogos} />
+                          <Cartela key={j.id} aposta={j} jogos={jogos} reload={setIsReloading}/>
                         ))}
                     </div>
                   </div>
