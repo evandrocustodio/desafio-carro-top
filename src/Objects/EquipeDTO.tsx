@@ -1,5 +1,7 @@
 type EquipeDTO = {
-  equipe: string;
+  id: string;
+  name: string;
+  sigla: string;
   logo: string;
 };
 

@@ -50,11 +50,14 @@
   border-radius: 20px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 .home-right-container-top {
+  
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 5px;
+  
 }
 
 .home-right-container-title {
@@ -78,6 +81,7 @@
 .home-left-container-top-left {
   font-size: 28px;
   font-weight: bold;
+  width: 100%;
 }
 
 .home-left-container-top-right {
@@ -95,4 +99,48 @@
 .home-left-container-top-left-area {
   display: flex;
   flex-direction: column;
+}
+.container-item-nova-aposta {
+  width: 300px;
+  height: 60px;
+  margin-bottom: 5px;
+  border:  1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-item-nova-aposta img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.container-item-nova-aposta-empate {
+  font-size: 40px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.container-item-nova-aposta-ordem {
+  font-size: 14px;
+  width: 0px;
+}
+
+
+.container-item-nova-aposta-palpite {
+  font-size: 16px;
+  width: 100px;
+  text-align: end;
+  color: darkblue;
+  height: 60px;
+  margin-bottom: 5px;
+  border:  1px solid black;
+  padding: 17px;
+  
+}
+
+.big-container {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  align-items: flex-start;
 }

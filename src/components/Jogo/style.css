@@ -1,4 +1,5 @@
 .jogo-container {
+  margin-top: -5px;
   display: flex;
   flex-direction: column;
   height: 70px;
@@ -7,9 +8,13 @@
   width: 59px;
 
 }
-
+.jogo-container-foot {
+  margin-top: -2px;
+  font-size: 12px;
+}
 
 .jogo-container img {
+  margin-top: -5px;  
   width: 30px;
 }
 .sinalizador {

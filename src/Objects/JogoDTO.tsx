@@ -1,10 +1,19 @@
+import CampeonatoDTO from "./CampeonatoDTO";
 import EquipeDTO from "./EquipeDTO";
+import RodadaDTO from "./RodadaDTO";
 
 type JogoDTO = {
-  casa: EquipeDTO;
-  fora: EquipeDTO;
+  id: number;
+  timeCasa: EquipeDTO;
+  timeFora: EquipeDTO;
+  campeonato: CampeonatoDTO;
+  rodada: RodadaDTO;
+  data: string;
   palpite: number;
-  resultado: number
+  resultado: number;
+  link: string;
+  placar: string;
+  ordem: number;
 };
 
 export default JogoDTO;

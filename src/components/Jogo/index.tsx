@@ -1,24 +1,35 @@
-import NavBar from 'components/Navbar';
 import JogoDTO from 'Objects/JogoDTO';
 import './style.css';
 
-const Jogo = (jogo: JogoDTO) => {
+type Props = {
+  partida: JogoDTO;
+  palpite: number;
+};
+
+const Jogo = ({ partida, palpite }: Props) => {
+  const acertouJogo = palpite === partida.resultado;
   return (
     <div className="jogo-container">
       <div className="jogo-container-header">
-        {jogo.casa.equipe} x {jogo.fora.equipe}
+        {partida.timeCasa.sigla} x {partida.timeFora.sigla}
       </div>
-      <div
-        className={jogo.palpite== jogo.resultado ? 'sinalizador' : 'sinalizador-red'}
-      />
-      {jogo.palpite != 0 && (
+      <div className="jogo-container-foot">
+        {partida.placar ? partida.placar : '-'}
+      </div>
+      <div className={acertouJogo ? 'sinalizador' : 'sinalizador-red'} />
+      {palpite !== 0 && (
         <div className="itens-jogos-logo">
-          <img src={jogo.palpite==1?jogo.casa.logo:jogo.fora.logo} />
+          <a href={partida.link} target="_blank" rel="noreferrer">
+            <img
+              src={
+                palpite === 1 ? partida.timeCasa.logo : partida.timeFora.logo
+              }
+              alt=""
+            />
+          </a>
         </div>
-      )} 
-      {jogo.palpite == 0 && <div className='empate'>
-        X
-      </div>}
+      )}
+      {palpite === 0 && <div className="empate">X</div>}
     </div>
   );
 };
