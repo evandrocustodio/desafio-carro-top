@@ -1,13 +1,19 @@
 import './style.css';
 import 'bootstrap/js/src/collapse.js';
 import { Link, NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFutbol} from '@fortawesome/free-solid-svg-icons'
+
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-md main-nav navbar-light">
       <div className="container-fluid">
         <Link to="/" className="nav-logo-text ">
-          <h4>Sportifs</h4>
+          <div className='logo'>
+          <FontAwesomeIcon icon={faFutbol} className="icone" />
+          <h4>B3ts</h4>
+          </div>
         </Link>
         <button
           className="navbar-toggler"
@@ -29,10 +35,10 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/rodadas">RODADAS</NavLink>
+              <NavLink to="/rodadas">RANKING</NavLink>
             </li>            
             <li>
-              <NavLink to="/premiacoes">RANKING</NavLink>
+              <NavLink to="/regras">REGRAS</NavLink>
             </li>            
             <li>
               <NavLink to="/acesso">ACESSO</NavLink>

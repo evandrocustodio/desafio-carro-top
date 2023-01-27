@@ -4,6 +4,7 @@ import NavBar from 'components/Navbar';
 import Catalog from 'pages/Catalog';
 import Home from 'pages/Home';
 import Acesso from 'pages/Acesso';
+import Regras from 'pages/Regras';
 
 const Routes = () => {
   return (
@@ -15,6 +16,9 @@ const Routes = () => {
         </Route>
         <Route path="/rodadas">
           <Catalog />
+        </Route>
+        <Route path="/regras">
+          <Regras />
         </Route>
         <Route path="/acesso">
           <Acesso />

@@ -1,4 +1,3 @@
-import NavBar from 'components/Navbar';
 import './style.css';
 const PlayerCredit = () => {
   return (

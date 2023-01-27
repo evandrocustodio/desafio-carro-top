@@ -43,6 +43,9 @@
 }
 
 .home-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px 0px;
   width: 300px;
   height: 100%;
@@ -50,14 +53,11 @@
   border-radius: 20px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 .home-right-container-top {
-  
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 5px;
-  
 }
 
 .home-right-container-title {
@@ -104,7 +104,7 @@
   width: 300px;
   height: 60px;
   margin-bottom: 5px;
-  border:  1px solid black;
+  border: 1px solid black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -125,7 +125,6 @@
   width: 0px;
 }
 
-
 .container-item-nova-aposta-palpite {
   font-size: 16px;
   width: 100px;
@@ -133,9 +132,8 @@
   color: darkblue;
   height: 60px;
   margin-bottom: 5px;
-  border:  1px solid black;
+  border: 1px solid black;
   padding: 17px;
-  
 }
 
 .big-container {
@@ -143,4 +141,33 @@
   width: 400px;
   justify-content: center;
   align-items: flex-start;
+}
+
+.home-right-container-dados {
+  margin-bottom: 10px;
+}
+
+.dados {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+  border-bottom: 1px dotted black;
+  margin: 0px 15px 10px 15px;
+}
+
+.dados h1 {
+  font-size: 12px;
+}
+
+.dados h2 {
+  font-size: 14px;
+}
+
+.dados h3 {
+  font-size: 14px;
+  color: darkgreen;
+}
+
+.escoder{
+  display: none;
 }

@@ -10,7 +10,7 @@ const RankingItem = () => {
           <div>JOÃO CARLOS</div>
           <p>C73D547</p>
         </div>
-        <img
+        <img alt=""
           src={olho}
           className="ranking-img"
         />

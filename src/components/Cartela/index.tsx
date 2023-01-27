@@ -13,11 +13,11 @@ type Props = {
   reload?: any;
 };
 
-const Cartela = ({ aposta, jogos,reload }: Props) => {
+const Cartela = ({ aposta, jogos, reload}: Props) => {
 
   const deletarAposta = async (aposta:ApostaDTO) => {
-    const r = await api.delete(`apostas/${aposta.id}`);
-    reload(false);
+    await api.delete(`apostas/${aposta.id}`);
+    reload();
 
   }
 
@@ -38,7 +38,7 @@ const Cartela = ({ aposta, jogos,reload }: Props) => {
         <div className="itens-id">
           {aposta.hash.substring(0, 7).toUpperCase()}
         </div>
-        <div className="itens-date">22/05/2022 17:15</div>
+        <div className="itens-date">{aposta.data}</div>
       </div>
       <div className="itens-right">
         {jogos?.map((j, x) => (

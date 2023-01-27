@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './style.css';
 import api from 'api';
-import EquipeDTO from 'Objects/EquipeDTO';
 
 const Acesso = () => {
   const [texto,setTexto] = useState("");

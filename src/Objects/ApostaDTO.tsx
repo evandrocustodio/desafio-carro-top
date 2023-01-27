@@ -7,6 +7,7 @@ type ApostaDTO = {
   palpites: string;
   hash: string;
   pontos: number;
+  data: string;
   apostador: ApostadorDTO;
 };
 

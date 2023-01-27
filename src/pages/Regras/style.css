@@ -1,0 +1,55 @@
+.regras-container {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-size: 22px;
+  height: 92vh;
+}
+
+
+.regras-container ul  {
+  list-style: none;
+  counter-reset: my-counter;
+}
+
+.regras-container ul li {
+  counter-increment: my-counter;
+}
+.regras-container ul li::before {
+  content: counter( my-counter) ". ";
+  font-weight: bold;
+  color: #DA2C38;
+}
+
+.regras-top {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: 100%;
+  max-width: 970px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.regras-body {
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 970px;
+  height: 100%;
+  margin: 5px;
+}
+
+.regras-body p {
+  font-size: 16px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.regras-body li {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 3px;
+}
